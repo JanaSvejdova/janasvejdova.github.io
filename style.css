@@ -296,7 +296,7 @@ button.normal {
   font-size: 14px;
   font-weight: 600;
   padding: 15px 30px;
-  color: #0000;
+  
   background-color: #ffff;
   border-radius: 4px;
   cursor: pointer;
@@ -427,8 +427,12 @@ button.white {
   text-align: center;
   flex-direction: column;
   padding: 14px;
+  
+}
 
-
+#page-header h2,
+#page-header p{
+  color: #fff;
 }
 
 
@@ -494,4 +498,208 @@ button.white {
 
 #prodetails .single-pro-details span{
   line-height: 25px;
+}
+
+#banner3 {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#banner3 .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("img/banner/b7.jpg");
+  min-width: 30%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#banner3 .banner-box2 {
+ background-image: url("img/banner/b4.jpg");
+}
+
+
+#banner3 .banner-box3 {
+  background-image: url("img/banner/b18.jpg");
+ }
+ 
+
+#banner3 h2 {
+  color: #ffff;
+  font-weight: 900;
+  font-size: 22px;
+
+}
+
+#banner3 h3 {
+  color: #662727;
+  font-weight: 800;
+  font-size: 15px;
+
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+
+
+}
+
+footer .logo {
+  margin-bottom: 30px;
+}
+
+footer h4 {
+
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+footer .follow {
+  margin-top: 20px;
+}
+
+footer .follow i{
+  color: #465b52;
+  padding-right: 4px;
+  cursor: pointer;
+
+
+}
+
+footer .install .row img{
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+
+footer .install img{
+  margin: 10px 0 15PX 0;
+
+}
+
+footer .follow i:hover,
+footer a:hover {
+  color: #088178;
+}
+
+@media (max-width:799px) {
+  #navbar {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100vh;
+    width: 300px;
+    background-color: #E3E6F3;
+    box-shadow: 0 40pc 60pc rgba(0, 0, 0, 0.01);
+    padding: 80px 0 0 10px;
+  }
+}
+
+
+#pagination {
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+#page-header.blog-header {
+  background-image: url("img/banner/b19.jpg");
+}
+
+#blog {
+  padding: 150px 150pc 0 150px;
+}
+
+#blog .blog-box{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+#blog .blog-img{
+  width: 50%;
+  margin-right: 40px;
+  object-fit: cover;
+}
+
+#blog .blog-details {
+  width: 50%;
+}
+
+#blog .blog-details a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #000;
+  font-weight: 700; 
+  position: relative;
+}
+
+#blog .blog-details a::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+}
+
+
+#blog .blog-details a:hover {
+
+color: #088178;
+}
+
+#blog .blog-box h1 {
+  position:absolute;
+  top: 40%;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #c9cbce;
 }
